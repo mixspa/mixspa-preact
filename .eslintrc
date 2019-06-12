@@ -16,8 +16,7 @@
     sourceType: "module"
   },
   plugins: [
-    "jest",
-    "react"
+    "jest"
   ],
   settings: {
     react: {
@@ -26,6 +25,7 @@
   },
   rules: {
     indent: ["error", 2],
-    no-empty-pattern: 0
+    no-empty-pattern: 0,
+    no-unused-vars: [0, { "varsIgnorePattern": "^h$" }],
   }
 }
